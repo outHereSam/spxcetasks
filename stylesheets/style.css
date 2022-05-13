@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #0D1220;
+    color: #fff;
+}
+
+.logo {
+   text-align: center;
+   margin: 30px 0 40px 0;
+}
+
+main {
+    padding: 0 20px 0 20px;
+}
+
+#todo {
+    margin: 0 0 30px 0;
+}
+
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todoItem:last-of-type {
+    margin-bottom: 0;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.todoItem p {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.completeItem {
+    width: 14px;
+    height: 14px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+}
+
+.deleteItem {
+    background: none;
+    border: none;
+    transition: fill 0.2s ease-in;
+    cursor: pointer;
+}
+
+.deleteItem:hover svg path {
+    fill: #FF6666;
+}
+
+.completedItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+
+.completedItem p {
+    font-size: 16px;
+    text-decoration-line: line-through;
+}
+
+.toggleComplete {
+    display: none;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label p {
+    font-size: 12px;
+    color: #A3A3A3;
+}
+
+.hide-completed {
+    display: none;
+}
+
+footer {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* height: 130px; */
+    background-color: #20242E;
+    padding: 0 20px 20px 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+footer input {
+    padding: 15px 0 15px 12px;
+    width: 100%;
+    height: 47px;
+    margin: 30px 0 20px 0;
+    text-indent: 15px;
+    /* border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px; */
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    appearance: none;
+    background-color: #373C49;
+    color: #fff;
+}
+
+footer input::placeholder {
+    color: #A3A3A3;
+    font-size: 14px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#addTask {
+    font-size: 15px;
+    color: #00A49A;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+    float: right;
+    /* width: 47px;
+    height: 47px;
+    background-color: #00A49A;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    border-radius: 50%; */
+}
+
+.check {
+    margin: 0 20px 0 0;
+}
+
+#addTask:hover {
+    color: #46FFF4;
+    /* background-color: #00cabd; */
+}
+
+
+.menu {
+    padding: 0 20px 20px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    background-color: #353943;
+    display: none;
+}
+
+.deleteTasks {
+    font-size: 15px;
+    margin: 20px 0 0 30px;
+}
+
+.closeMenu {
+    margin: 10px 0 0 30px;
+}
